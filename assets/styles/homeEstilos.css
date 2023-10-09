@@ -1,0 +1,28 @@
+/* Pantallas pequeñas y medianas (md) */
+.custom-img {
+    width: 100%;
+  }
+  
+  /* Pantallas más grandes que md */
+  @media (min-width: 768px) {
+    .custom-img {
+      width: 50%; /* O cualquier otro ancho deseado para pantallas más grandes */
+    }
+  }
+
+  .seleccion:hover {
+    background-color: black;
+    opacity: 0.8;
+    color:white;
+    transform: scale(1.03); /* Ajusta el valor según el nivel de zoom deseado */
+    transition: transform 0.3s ease; /* Agrega una transición para que el zoom sea suave */
+}
+
+.fondo{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.boton{
+    background-color: #50138C !important;
+}
