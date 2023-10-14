@@ -27,27 +27,38 @@
 
     <main>
         <div class="container">
+            <div class="row my-3">
+                <div class="col-12 col-md-6">
+                    <img src="../assets/img/Robot.webp" alt="foto" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+
+                    <h3>Selección de tecnologías: </h3>
+                    <div class="alert alert-primary" role="alert">
+                        Al igual que un navegante que requiere cartas náuticas precisas para navegar con seguridad en aguas desconocidas, una organización necesita un mapa claro de las tecnologías que impulsan su progreso. Esto te permite sortear los desafíos con confianza y tomar el timón de la innovación con conocimiento de causa. En esta etapa, podrás utilizar una herramienta poderosa llamada la 'Matriz VRIO' para evaluar las tecnologías disponibles. La Matriz VRIO te permite analizar la Valiosidad, Rareza, Imitabilidad y Organización de las tecnologías, lo que facilita la selección de las más relevantes y estratégicas para tu organización.
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 my-5">
-                    <h3>Selección de tecnologías: </h3>
                     <hr>
                     <form>
 
                         <div class="row my-4">
                             <div class="col-12 col-md-4">
-                                <h5>Tecnología</h5>
+                               
                             </div>
                             <div class="col-12 col-md-2 text-center">
-                                <h5>Valiosa</h5>
+                                <h3>Valiosa</h3>
                             </div>
                             <div class="col-12 col-md-2 text-center">
-                                <h5>Rara</h5>
+                                <h3>Rara</h3>
                             </div>
                             <div class="col-12 col-md-2 text-center">
-                                <h5>Inimitable</h5>
+                                <h3>Inimitable</h3>
                             </div>
                             <div class="col-12 col-md-2 text-center">
-                                <h5>Organizada</h5>
+                                <h3>Organizada</h3>
                             </div>
                         </div>
 
@@ -55,7 +66,7 @@
                         <div class="row">
 
                             <div class="col-12 col-md-4">
-                                <h5>Tecnología 1</h5>
+                                <h5 id="nombreteca">Tecnología 1</h5>
                             </div>
 
                             <div class="col-12 col-md-2">
@@ -118,7 +129,7 @@
                         <div class="row">
 
                             <div class="col-12 col-md-4">
-                                <h5>Tecnología 2</h5>
+                                <h5 id="nombretecb">Tecnología 2</h5>
                             </div>
 
                             <div class="col-12 col-md-2">
@@ -181,7 +192,7 @@
                         <div class="row">
 
                             <div class="col-12 col-md-4">
-                                <h5>Tecnología 3</h5>
+                                <h5 id="nombretecc">Tecnología 3</h5>
                             </div>
 
                             <div class="col-12 col-md-2">
@@ -241,7 +252,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-primary mt-2" type="button" id="btnevaluartecnologia">Evaluar</button>
+                        <button class="btn btn-primary mt-2 w-100" type="button" id="btnevaluartecnologia">Evaluar</button>
                     </form>
                 </div>
             </div>
@@ -256,7 +267,7 @@
                     <canvas id="burbujas"></canvas>
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
-                    <div class="alert alert-warning d-none" role="alert" id="mensajeseleccion">
+                    <div class="alert alert-primary d-none" role="alert" id="mensajeseleccion">
                         A simple primary alert—check it out!
                       </div>
                 </div>

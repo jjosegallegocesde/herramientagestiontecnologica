@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GestionTechApp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/homeEstilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
 
     <header>
@@ -22,10 +23,243 @@
             </div>
         </nav>
     </header>
-    
+
+    <main>
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-12 col-md-6">
+                    <img src="../assets/img/Robot.webp" alt="foto" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+
+                    <h3>Adquisición de tecnología: </h3>
+                    <div class="alert alert-primary" role="alert">
+                        La adquisición de tecnología es una decisión crucial para cualquier empresario, ya que puede
+                        tener un impacto significativo en el desarrollo y el éxito de su negocio.
+                        Nuestra herramienta está diseñada para guiar a los empresarios a lo largo de este proceso,
+                        ayudándoles a evaluar aspectos como la disponibilidad en el mercado, la esencialidad de la
+                        tecnología, la capacidad interna, el grado de control deseado y los riesgos asociados. Al
+                        comprender a fondo sus necesidades y recursos, los empresarios podrán tomar decisiones más
+                        informadas y estratégicas en cuanto a la adquisición de tecnología, maximizando así las
+                        oportunidades de crecimiento y éxito.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <hr>
+                    <form>
+                        <div class="row text-primary" id="filapregunta1">
+                            <div class="col-12 col-md-6">
+                                <h3>¿La tecnología que desea adquirir está disponible en el mercado?</h3>
+                                <p>Para responder a esta pregunta de manera acertada, es necesario haber realizado
+                                    previamente una exhaustiva vigilancia estratégica del mercado. Esto implica
+                                    investigar a fondo las ofertas existentes, identificar a los proveedores clave y
+                                    evaluar su capacidad para satisfacer las necesidades específicas de la empresa.
+                                    Además, se debe considerar la disponibilidad a corto y largo plazo, así como la
+                                    evolución de la tecnología en el mercado.</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta1">
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row my-4 text-muted" id="filapregunta2">
+                            <div class="col-12 col-md-6">
+                                <h3>¿La tecnología es esencial para el desarrollo del negocio a corto o largo plazo?
+                                </h3>
+                                <p>Evaluar si la tecnología es esencial a corto o largo plazo implica analizar cómo
+                                    impactará la adquisición tecnológica en los objetivos y la estrategia de la empresa
+                                    en el corto plazo (como el próximo año) y en el largo plazo (los próximos 3-5 años o
+                                    más). Esto ayudará a determinar si la inversión en tecnología es necesaria de
+                                    inmediato o si puede ser una consideración a largo plazo.</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta2" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="corto">Corto plazo</option>
+                                        <option value="largo">Largo Plazo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta3">
+                            <div class="col-12 col-md-6">
+                                <h3>¿La tecnología que necesitas es altamente especializada y única en el mercado?</h3>
+                                <p>Si la tecnología es altamente especializada y única, es crucial llevar a cabo una
+                                    vigilancia estratégica detallada para entender si existen alternativas viables o si
+                                    la empresa podría tener la ventaja competitiva al adquirirla.</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta3" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta4">
+                            <div class="col-12 col-md-6">
+                                <h3>¿Prefiere tener propiedad sobre la tecnología o está dispuesto a utilizar soluciones
+                                    tecnológicas de terceros en lugar de desarrollarlas internamente?</h3>
+                                <p>El empresario debe realizar un análisis completo que incluya la evaluación de costos,
+                                    calidad y flexibilidad de las soluciones tecnológicas de terceros en comparación con
+                                    el desarrollo interno. También debe considerar aspectos como propiedad intelectual,
+                                    velocidad de implementación, escalabilidad, riesgos, seguridad, proveedores de
+                                    soluciones externas, estrategia a largo plazo y cumplimiento regulatorio</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta4" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="propiedad">Propiedad</option>
+                                        <option value="terceros">Soluciones de Terceros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta5">
+                            <div class="col-12 col-md-6">
+                                <h3>¿Qué grado de control considera necesario tener sobre el desarrollo?</h3>
+                                <p>Determinar el grado de control necesario depende de la estrategia de la empresa y su
+                                    tolerancia al riesgo. Un mayor control implica un desarrollo interno, mientras que
+                                    un menor control podría implicar asociaciones o adquisiciones</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta5" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="alto">Alto control</option>
+                                        <option value="bajo">Bajo control</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta6">
+                            <div class="col-12 col-md-6">
+                                <h3>¿La empresa cuenta con la capacidad financiera para considerar una estrategia que
+                                    tome en cuenta la inversión inicial y los costos en curso de una adquisición
+                                    empresarial?</h3>
+                                <p>La capacidad de explorar una estrategia, como la adquisición, requiere una evaluación
+                                    financiera profunda para determinar si la empresa puede afrontar la inversión
+                                    inicial y los costos a largo plazo. Esto incluye el análisis de flujos de efectivo,
+                                    retornos de inversión y riesgos financieros</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta6" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta7">
+                            <div class="col-12 col-md-6">
+                                <h3>¿Existen intereses mutuos significativos, incluyendo la complementariedad de
+                                    recursos y capacidades con la empresa propietaria de la tecnología?</h3>
+                                <p>Evaluar los intereses mutuos implica analizar una posible fusión de recursos y
+                                    capacidades que podría generar sinergias estratégicas, ventajas competitivas o
+                                    eficiencias operativas beneficiosas para ambas partes</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta7" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta8">
+                            <div class="col-12 col-md-6">
+                                <h3>¿Cuenta con la capacidad necesaria para realizar el desarrollo en cuanto capital
+                                    financiero, humano, tiempo e infraestructura?</h3>
+                                <p>Para determinar si la empresa cuenta con la capacidad necesaria para el desarrollo,
+                                    se debe evaluar la disponibilidad de recursos financieros, el personal con la
+                                    experiencia requerida, el tiempo disponible y la infraestructura necesaria para
+                                    llevar a cabo el proceso de desarrollo tecnológico de manera efectiva y eficiente.
+                                    Esta evaluación ayuda a determinar si la empresa puede ejecutar internamente el
+                                    proyecto tecnológico.</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta8" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-4 text-muted" id="filapregunta9">
+                            <div class="col-12 col-md-6">
+                                <h3>¿La empresa está en disposición de asumir todos los riesgos asociados al desarrollo
+                                    o consideraria realizarlo de manera conjunta?</h3>
+                                <p>Evaluar la disposición de asumir riesgos está estrechamente relacionado con la
+                                    tolerancia al riesgo de la empresa. La toma de decisiones debe considerar si es
+                                    preferible asumir todos los riesgos internamente o si una colaboración estratégica
+                                    podría mitigar algunos de estos riesgos</p>
+                            </div>
+                            <div class="col-12 col-md-6 align-self-center">
+                                <div class="mb-3">
+                                    <select class="form-select" id="pregunta9" disabled>
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="si">Si</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="row my-4 d-none" id="resultadofinaladqisicion">
+                <div class="col-12 text-center">
+                    <h4>La mejor opcion de adquisición tecnológica de acuerdo a las respuestas que seleccionó es:</h4>
+                    <div class="alert alert-primary" role="alert">
+                        <h3 id="opcionelegida" class="fw-bold"></h3>
+                        <p id="resultadoadquisicion"></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary w-50 mx-auto d-block" id="iniciofiltro">Reiniciar filtro <i
+                            class="bi bi-arrow-clockwise"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../controllers/controladorAdquisicion.js"></script>
 </body>
+
 </html>

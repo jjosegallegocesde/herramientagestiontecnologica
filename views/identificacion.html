@@ -7,7 +7,6 @@
     <title>GestionTechApp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/homeEstilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -27,89 +26,139 @@
 
     <main>
         <div class="container">
+
+            <div class="row my-3">
+                <div class="col-12 col-md-6">
+                    <img src="../assets/img/Robot.webp" alt="foto" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+
+                    <h3>Identificación de tecnologías: </h3>
+                    <div class="alert alert-primary" role="alert">
+                        La identificación de tecnologías relevantes es esencial para la gestión tecnológica de una
+                        organización. En un entorno empresarial en constante evolución, comprender las herramientas y
+                        soluciones tecnológicas utilizadas en tu industria es clave para tomar decisiones estratégicas
+                        informadas.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-3">
+                <div class="col-12">
+                    <h4 class="fw-bold mt-3">Para comenzar, digita el nombre de las tecnologias a evaluar:</h4>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="nombreTecA"
+                                        placeholder="Nombre Tecnología A">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="nombreTecB"
+                                        placeholder="Nombre Tecnología B">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="nombreTecC"
+                                        placeholder="Nombre Tecnología C">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-12 my-5">
 
-                    <h3>Identificación de tecnologías: </h3>
-                    <hr>
-
                     <h3>1. Medición de las capacidades de la organización comparado con los competidores: </h3>
-                    <form class="mt-2">
+
+                    <form class="mt-5">
 
                         <div class="row">
-                            <div class="col-12 col-md-3">
-                                <h5>Criterios de capacidad</h5>
+                            <div class="col-3 col-md-3">
+                                <h5></h5>
                             </div>
                             <div class="col-12 col-md-3">
-                                <h5>Tecnología A</h5>
+                                <h5 id="tituloA" class="d-none d-md-block"></h5>
                             </div>
                             <div class="col-12 col-md-3">
-                                <h5>Tecnología B</h5>
+                                <h5 id="tituloB" class="d-none d-md-block"></h5>
                             </div>
                             <div class="col-12 col-md-3">
-                                <h5>Tecnología C</h5>
+                                <h5 id="tituloC" class="d-none d-md-block"></h5>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <p>¿Cuál es la magnitud de los recursos tecnológicos de la organización frente a la competencia?</p>
+                                <p>¿Cuál es la magnitud de los recursos tecnológicos de la organización frente a la
+                                    competencia?</p>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadTecnologiaA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadTecnologiaA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadTecnologiaB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadTecnologiaB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadTecnologiaC" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>¿Cuál es la magnitud de los recursos humanos de la organización frente a la competencia?</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosHumanosA" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosHumanosB" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosHumanosC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadTecnologiaC"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <p>¿Cuál es la magnitud de los recursos financieros de la organización frente a la competencia?</p>
+                                <p>¿Cuál es la magnitud de los recursos humanos de la organización frente a la
+                                    competencia?</p>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosFinancierosA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadRecursosHumanosA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosFinancierosB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadRecursosHumanosB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="magnitudCapacidadRecursosFinancierosC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="magnitudCapacidadRecursosHumanosC"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <p>¿Cuál es la magnitud de los recursos financieros de la organización frente a la
+                                    competencia?</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control"
+                                        id="magnitudCapacidadRecursosFinancierosA"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control"
+                                        id="magnitudCapacidadRecursosFinancierosB"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control"
+                                        id="magnitudCapacidadRecursosFinancierosC"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -120,173 +169,173 @@
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="relevanciarecursosexternosA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="relevanciarecursosexternosA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="relevanciarecursosexternosB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="relevanciarecursosexternosB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="relevanciarecursosexternosC" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>¿Cuál es el estado de mantenimiento y actualización de las tecnologías existentes?</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="estadoMantenimientoA" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="estadoMantenimientoB" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="estadoMantenimientoC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="relevanciarecursosexternosC"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <p>¿Cuál es la cultura organizacional en términos de apertura a la innovación y la tecnología?</p>
+                                <p>¿Cuál es el estado de mantenimiento y actualización de las tecnologías existentes?
+                                </p>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="culturaOrganizacionalA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="estadoMantenimientoA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="culturaOrganizacionalB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="estadoMantenimientoB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="culturaOrganizacionalC" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>¿cuál es la capacidad de la organización para adaptarse a cambios tecnológicos que exige la tecnología?</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadCambiosA" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadCambiosB" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadCambiosC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="estadoMantenimientoC"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <p>¿Cuál es la experiencia previa de la organización en la adopción de la tecnología?</p>
+                                <p>¿Cuál es la cultura organizacional en términos de apertura a la innovación y la
+                                    tecnología?</p>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="experienciapreviaA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="culturaOrganizacionalA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="experienciapreviaB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="culturaOrganizacionalB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="experienciapreviaC" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>¿Cuál es la capacidad de la organización para adquirir y desplegar la nueva tecnología?</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadAdquirirA" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadAdquirirB" placeholder="Escriba su respuesta">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="capacidadAdquirirC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="culturaOrganizacionalC"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-md-3">
-                                <p>¿cuál es el grado de conocimiento de la organización frente a esta tecnología? (en función a los criterios “Capacidades de Conocimiento”)</p>
+                                <p>¿cuál es la capacidad de la organización para adaptarse a cambios tecnológicos que
+                                    exige la tecnología?</p>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="gradoconocimeintoA" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="capacidadCambiosA"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="gradoconocimeintoB" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="capacidadCambiosB"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="gradoconocimeintoC" placeholder="Escriba su respuesta">
+                                    <textarea class="form-control" id="capacidadCambiosC"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <p>¿Cuál es la experiencia previa de la organización en la adopción de la tecnología?
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="experienciapreviaA"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="experienciapreviaB"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="experienciapreviaC"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <p>¿Cuál es la capacidad de la organización para adquirir y desplegar la nueva
+                                    tecnología?</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="capacidadAdquirirA"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="capacidadAdquirirB"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="capacidadAdquirirC"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <p>¿cuál es el grado de conocimiento de la organización frente a esta tecnología?</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="gradoconocimeintoA"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="gradoconocimeintoB"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="gradoconocimeintoC"></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
 
-                    <h3>2. Diligenciar para cada tecnología identificada: </h3>
-                    <form class="mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mt-3">2. Zona de Identificación: </h3>
+
+                    <form class="my-5">
+
                         <div class="row">
-                            <div class="col-12 col-md-3">
-                                <h5>Criterio: </h5>
+                            <div class="col-12 col-md-2 text-center">
+                                <h5 id="tituloA2">TecnologiaA</h5>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <h5>Tecnología A</h5>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <h5>Tecnología B</h5>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <h5>Tecnología C</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Categoría: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <select class="form-select" id="categoriaidentificacionA">
-                                            <option value="Equipo" selected>Equipo</option>
+                                            <option value="" selected>Seleccione Categoria</option>
+                                            <option value="Equipo">Equipo</option>
                                             <option value="Dispositivo">Dispositivo</option>
                                             <option value="Hardware">Hardware</option>
                                             <option value="Comunicaciones">Comunicaciones</option>
@@ -297,225 +346,247 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="categoriaidentificacionB">
-                                        <option value="Equipo" selected>Equipo</option>
-                                        <option value="Dispositivo">Dispositivo</option>
-                                        <option value="Hardware">Hardware</option>
-                                        <option value="Comunicaciones">Comunicaciones</option>
-                                        <option value="Cienciadedatos">Ciencia de datos</option>
-                                        <option value="InteligenciaArtificial">Inteligencia artificial</option>
-                                        <option value="Otra">Otra</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="categoriaidentificacionC">
-                                        <option value="Equipo" selected>Equipo</option>
-                                        <option value="Dispositivo">Dispositivo</option>
-                                        <option value="Hardware">Hardware</option>
-                                        <option value="Comunicaciones">Comunicaciones</option>
-                                        <option value="Cienciadedatos">Ciencia de datos</option>
-                                        <option value="InteligenciaArtificial">Inteligencia artificial</option>
-                                        <option value="Otra">Otra</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Disponible en otra área de la organización: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <select class="form-select" id="disponibletecnologiaA">
-                                            <option value="si" selected>SI</option>
-                                            <option value="no">NO</option>
+                                            <option value="" selected>Está disponible?</option>
+                                            <option value="1">SI</option>
+                                            <option value="0">NO</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="disponibletecnologiaB">
-                                        <option value="si" selected>SI</option>
-                                        <option value="no">NO</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="disponibletecnologiaC">
-                                        <option value="si" selected>SI</option>
-                                        <option value="no">NO</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Madurez Tecnológica: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <select class="form-select" id="madurezA">
-                                            <option value="emergente" selected>Emergente</option>
-                                            <option value="viable">Viable</option>
-                                            <option value="creciente">Creciente</option>
-                                            <option value="madura">Madura</option>
-                                            <option value="declive">En declive</option>
+                                            <option value="" selected>Cuál es la madurez?</option>
+                                            <option value="1">En declive</option>
+                                            <option value="2">Emergente</option>
+                                            <option value="3">Viable</option>
+                                            <option value="4">Creciente</option>
+                                            <option value="5">Madura</option>
+
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="madurezB">
-                                        <option value="emergente" selected>Emergente</option>
-                                        <option value="viable">Viable</option>
-                                        <option value="creciente">Creciente</option>
-                                        <option value="madura">Madura</option>
-                                        <option value="declive">En declive</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="madurezC">
-                                        <option value="emergente" selected>Emergente</option>
-                                        <option value="viable">Viable</option>
-                                        <option value="creciente">Creciente</option>
-                                        <option value="madura">Madura</option>
-                                        <option value="declive">En declive</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Impacto en la organización: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <select class="form-select" id="impactoidentificacionA">
-                                            <option value="1" selected>Bajo pero esencial</option>
-                                            <option value="2">Alto por costo o diferenciación</option>
-                                            <option value="3">Comprobado y alto</option>
-                                            <option value="4">Sin combrobar pero promisorio</option>
-                                            <option value="5">Bajo</option>
+                                            <option value="" selected>Cuál es el impacto?</option>
+                                            <option value="1">Bajo</option>
+                                            <option value="2">Bajo pero esencial</option>
+                                            <option value="3">Sin combrobar pero promisorio</option>
+                                            <option value="4">Alto por costo o diferenciación</option>
+                                            <option value="5">Comprobado y alto</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="impactoidentificacionB">
-                                        <option value="1" selected>Bajo pero esencial</option>
-                                        <option value="2">Alto por costo o diferenciación</option>
-                                        <option value="3">Comprobado y alto</option>
-                                        <option value="4">Sin combrobar pero promisorio</option>
-                                        <option value="5">Bajo</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <select class="form-select" id="impactoidentificacionC">
-                                        <option value="1" selected>Bajo pero esencial</option>
-                                        <option value="2">Alto por costo o diferenciación</option>
-                                        <option value="3">Comprobado y alto</option>
-                                        <option value="4">Sin combrobar pero promisorio</option>
-                                        <option value="5">Bajo</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Costo(rango) estimado de la tecnologia: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="number" class="form-control" id="costotecnologiaA" placeholder="$">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="number" class="form-control" id="costotecnologiaB" placeholder="$">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="mb-3">
-                                    <input type="number" class="form-control" id="costotecnologiaC" placeholder="$">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <p>Valoración: </p>
-                            </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <select class="form-select" id="valoracionTecnologiaA">
-                                            <option value="1" selected>1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
+                                            <option value="" selected>Valoración</option>
+                                            <option value="1">Baja</option>
+                                            <option value="2">Moderada Baja</option>
+                                            <option value="3">Moderada</option>
+                                            <option value="4">Alta</option>
+                                            <option value="5">Muy Alta</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-2 text-center">
+                                <h5 id="tituloB2">TecnologiaB</h5>
+                            </div>
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
-                                    <select class="form-select" id="valoracionTecnologiaB">
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
+                                    <div class="mb-3">
+                                        <select class="form-select" id="categoriaidentificacionB">
+                                            <option value="" selected>Seleccione Categoria</option>
+                                            <option value="Equipo">Equipo</option>
+                                            <option value="Dispositivo">Dispositivo</option>
+                                            <option value="Hardware">Hardware</option>
+                                            <option value="Comunicaciones">Comunicaciones</option>
+                                            <option value="Cienciadedatos">Ciencia de datos</option>
+                                            <option value="InteligenciaArtificial">Inteligencia artificial</option>
+                                            <option value="Otra">Otra</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="mb-3">
-                                    <select class="form-select" id="valoracionTecnologiaC">
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
+                                    <div class="mb-3">
+                                        <select class="form-select" id="disponibletecnologiaB">
+                                            <option value="" selected>Está disponible?</option>
+                                            <option value="1">SI</option>
+                                            <option value="0">NO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="madurezB">
+                                            <option value="" selected>Cuál es la madurez?</option>
+                                            <option value="1">En declive</option>
+                                            <option value="2">Emergente</option>
+                                            <option value="3">Viable</option>
+                                            <option value="4">Creciente</option>
+                                            <option value="5">Madura</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="impactoidentificacionB">
+                                            <option value="" selected>Cuál es el impacto?</option>
+                                            <option value="1">Bajo</option>
+                                            <option value="2">Bajo pero esencial</option>
+                                            <option value="3">Sin combrobar pero promisorio</option>
+                                            <option value="4">Alto por costo o diferenciación</option>
+                                            <option value="5">Comprobado y alto</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="valoracionTecnologiaB">
+                                            <option value="" selected>Valoración</option>
+                                            <option value="1">Baja</option>
+                                            <option value="2">Moderada Baja</option>
+                                            <option value="3">Moderada</option>
+                                            <option value="4">Alta</option>
+                                            <option value="5">Muy Alta</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <button class="btn btn-primary mt-2" type="button">Evaluar</button>
+                        <div class="row">
+                            <div class="col-12 col-md-2 text-center">
+                                <h5 id="tituloC2">TecnologiaC</h5>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="categoriaidentificacionC">
+                                            <option value="" selected>Seleccione Categoria</option>
+                                            <option value="Equipo">Equipo</option>
+                                            <option value="Dispositivo">Dispositivo</option>
+                                            <option value="Hardware">Hardware</option>
+                                            <option value="Comunicaciones">Comunicaciones</option>
+                                            <option value="Cienciadedatos">Ciencia de datos</option>
+                                            <option value="InteligenciaArtificial">Inteligencia artificial</option>
+                                            <option value="Otra">Otra</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="disponibletecnologiaC">
+                                            <option value="" selected>Está disponible?</option>
+                                            <option value="1">SI</option>
+                                            <option value="0">NO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="madurezC">
+                                            <option value="" selected>Cuál es la madurez?</option>
+                                            <option value="1">En declive</option>
+                                            <option value="2">Emergente</option>
+                                            <option value="3">Viable</option>
+                                            <option value="4">Creciente</option>
+                                            <option value="5">Madura</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="impactoidentificacionC">
+                                            <option value="" selected>Cuál es el impacto?</option>
+                                            <option value="1">Bajo</option>
+                                            <option value="2">Bajo pero esencial</option>
+                                            <option value="3">Sin combrobar pero promisorio</option>
+                                            <option value="4">Alto por costo o diferenciación</option>
+                                            <option value="5">Comprobado y alto</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <select class="form-select" id="valoracionTecnologiaC">
+                                            <option value="" selected>Valoración</option>
+                                            <option value="1">Baja</option>
+                                            <option value="2">Moderada Baja</option>
+                                            <option value="3">Moderada</option>
+                                            <option value="4">Alta</option>
+                                            <option value="5">Muy Alta</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="btnidentificar" class="btn btn-primary my-2 mx-auto d-block w-100" type="button">evaluar</button>
 
                     </form>
 
+
+
                 </div>
             </div>
+
+
+            <div class="row justify-content-center p-4 rounded border mb-5 d-none" id="filaresultados">
+                <div class="col-12 col-md-4 align-self-center">
+                    <div class="alert alert-primary" role="alert">
+                        Después de un exhaustivo análisis, hemos desvelado la esencia tecnológica que impulsa tu organización. Los datos revelan un panorama claro y revelador de las tecnologías utilizadas, permitiéndonos tomar decisiones estratégicas con base en información precisa.
+                        <span class="fw-bold">Aquí los resultados preeliminares:</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+            
+
         </div>
+
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+    <script src="../controllers/controladorIdentificacion.js"></script>
 </body>
 
 </html>

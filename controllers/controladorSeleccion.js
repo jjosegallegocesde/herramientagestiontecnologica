@@ -1,3 +1,16 @@
+let tecnologiaA = sessionStorage.getItem("tecnologiaA");
+let tecnologiaB = sessionStorage.getItem("tecnologiaB");
+let tecnologiaC = sessionStorage.getItem("tecnologiaC");
+
+let nombreteca=document.getElementById("nombreteca")
+let nombretecb=document.getElementById("nombretecb")
+let nombretecc=document.getElementById("nombretecc")
+
+nombreteca.textContent=tecnologiaA.toUpperCase()
+nombretecb.textContent=tecnologiaB.toUpperCase()
+nombretecc.textContent=tecnologiaC.toUpperCase()
+
+
 // Declara las variables para las puntuaciones
 let valiosaTecA, raraTecA, inimitableTecA;
 let valiosaTecB, raraTecB, inimitableTecB;
