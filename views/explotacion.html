@@ -7,7 +7,6 @@
     <title>GestionTechApp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/homeEstilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -35,12 +34,14 @@
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
 
-                    <h3>Identificación de tecnologías: </h3>
+                    <h3>Explotación de tecnologías: </h3>
                     <div class="alert alert-primary" role="alert">
-                        La identificación de tecnologías relevantes es esencial para la gestión tecnológica de una
-                        organización. En un entorno empresarial en constante evolución, comprender las herramientas y
-                        soluciones tecnológicas utilizadas en tu industria es clave para tomar decisiones estratégicas
-                        informadas.
+                        La explotación de la tecnología es una parte esencial de cualquier estrategia empresarial
+                        moderna, ya que permite a las empresas sacar el máximo provecho de sus activos tecnológicos y
+                        ganar ventaja competitiva. Nuestra herramienta ha sido diseñada para guiar a las empresas en
+                        este proceso, ayudándolas a evaluar aspectos como la optimización de recursos, la implementación
+                        eficiente de tecnologías existentes, la identificación de oportunidades de mejora y la
+                        maximización de los beneficios a través de la innovación tecnológica.
                     </div>
                 </div>
             </div>
@@ -100,11 +101,11 @@
                                 <div class="mb-3">
                                     <label class="form-label">Impacto</label>
                                     <select class="form-select" id="impactoexplotacion">
-                                        <option value="1" selected>1 (Mínimo)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 (Máximo)</option>
+                                        <option value="1">Bajo</option>
+                                        <option value="2">Bajo pero esencial</option>
+                                        <option value="3">Sin combrobar pero promisorio</option>
+                                        <option value="4">Alto</option>
+                                        <option value="5">Comprobado y alto</option>
                                     </select>
                                 </div>
                             </div>
@@ -112,11 +113,11 @@
                                 <div class="mb-3">
                                     <label class="form-label">Aprovechamiento</label>
                                     <select class="form-select" id="importanciaexplotacion">
-                                        <option value="1" selected>1 (Mínimo)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 (Máximo)</option>
+                                        <option value="1" selected>Bajo (Mínimo)</option>
+                                        <option value="2">Moderadamente Bajo</option>
+                                        <option value="3">Bajo</option>
+                                        <option value="4">Alto</option>
+                                        <option value="5">Muy alto (Máximo)</option>
                                     </select>
                                 </div>
                             </div>
@@ -127,11 +128,11 @@
                                 <div class="mb-3">
                                     <label class="form-label">Facilidad de transferencia</label>
                                     <select class="form-select" id="facilidadtransferenciaexplotacion">
-                                        <option value="1" selected>1 (Mínimo)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 (Máximo)</option>
+                                        <option value="1" selected>Dificil (Mínimo)</option>
+                                        <option value="2">Moderadamente dificil</option>
+                                        <option value="3">Dificil</option>
+                                        <option value="4">Alto</option>
+                                        <option value="5">Muy alto (Máximo)</option>
                                     </select>
                                 </div>
                             </div>
@@ -139,11 +140,11 @@
                                 <div class="mb-3">
                                     <label class="form-label">Impacto de la transferencia</label>
                                     <select class="form-select" id="impactotransferenciaexplotacion">
-                                        <option value="1" selected>1 (Mínimo)</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5 (Máximo)</option>
+                                        <option value="1" selected>Bajo (Mínimo)</option>
+                                        <option value="2">Moderado Bajo</option>
+                                        <option value="3">Bajo</option>
+                                        <option value="4">Alto</option>
+                                        <option value="5">Muy alto (Máximo)</option>
                                     </select>
                                 </div>
                             </div>
@@ -171,18 +172,33 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-primary mt-2" type="button">Evaluar</button>
+                        <button class="btn btn-primary mt-2 w-100" type="button" id="botonexplotacion">Evaluar</button>
 
                     </form>
                 </div>
             </div>
+
+            <div class="row justify-content-center d-none" id="resulexplota">
+                <div class="col-12 col-md-4 align-self-center">
+                    <div class="alert alert-primary" role="alert">
+                        Basado en los valores seleccionados, la puntuación refleja la evaluación de la tecnología o proyecto en términos de impacto, aprovechamiento, facilidad de transferencia e impacto de la transferencia."
+                        "Este resultado puede ser útil para tomar decisiones informadas en la explotación de tecnologías
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+            </div>
+
         </div>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+    <script src="../controllers/controladorExplotacion.js"></script>
 </body>
 
 </html>
